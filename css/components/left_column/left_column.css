@@ -1,0 +1,19 @@
+.left-column ul{
+    width:150px;
+}
+.left-column li{
+    list-style: none;
+    width:100%;
+    text-align: center;
+    padding:12px 0;
+    cursor: pointer;
+    border-left:2px solid #f6f7fb;
+    box-sizing: border-box;
+}
+.left-column li.column-active{
+    background-color: #f6f7fb;
+    border-left:2px solid #108cee;
+}
+.left-column li:hover{
+    background-color: #f6f7fb;
+}

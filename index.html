@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>ai</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="app">
+    <left-column></left-column>
+    <main-container></main-container>
+</div>
+
+
+<style>
+html,body,div,ul,li{
+    padding:0;
+    margin:0;
+}
+html,body{
+    height: 100%;
+}
+#app{
+    font-size: 0;
+    height: 100%;
+}
+#app::before{
+    content:'';
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-column{
+    display: inline-block;
+    font-size:16px;
+    border:1px solid red;
+    vertical-align: middle;
+    height: 100%;
+}
+.main-container{
+    vertical-align: middle;
+    display: inline-block;
+    font-size:16px;
+    border:1px solid blue;
+    height: 100%;
+}
+</style>
+<link rel="stylesheet" href="css/components/left_column/left_column.css" />
+<script src="js/require.js" data-main="js/main.js"></script>
+<!-- <script src="js/components/left_column/left_column.js"></script> -->
+<!-- <script src="js/components/main_container/main_container.js"></script> -->
+</body>
 </html>
